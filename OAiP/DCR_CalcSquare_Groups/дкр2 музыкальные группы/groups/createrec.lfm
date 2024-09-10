@@ -1,0 +1,123 @@
+object createRec: TcreateRec
+  Left = 978
+  Height = 253
+  Top = 262
+  Width = 357
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Создание записи'
+  ClientHeight = 253
+  ClientWidth = 357
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
+  object FIO_label: TLabel
+    Left = 13
+    Height = 15
+    Top = 9
+    Width = 96
+    Caption = 'Название группы'
+    OnClick = FIO_labelClick
+  end
+  object FIO_edit: TEdit
+    Left = 13
+    Height = 23
+    Top = 32
+    Width = 336
+    TabOrder = 0
+  end
+  object Year_Of_Birth_label: TLabel
+    Left = 13
+    Height = 15
+    Top = 63
+    Width = 72
+    Caption = 'Год создания'
+  end
+  object Materialist_chkbx: TCheckBox
+    Left = 173
+    Height = 17
+    Top = 117
+    Width = 18
+    TabOrder = 1
+  end
+  object Year_of_birth_edit: TEdit
+    Left = 13
+    Height = 23
+    Top = 83
+    Width = 80
+    TabOrder = 2
+  end
+  object Materialist_label: TLabel
+    Left = 12
+    Height = 15
+    Top = 117
+    Width = 123
+    Caption = 'Существует ли сейчас'
+  end
+  object Year_of_1st_composition_label: TLabel
+    Left = 112
+    Height = 15
+    Top = 63
+    Width = 79
+    Caption = 'Первый релиз'
+  end
+  object Year_of_1st_composition_edit: TEdit
+    Left = 112
+    Height = 23
+    Top = 83
+    Width = 177
+    TabOrder = 3
+  end
+  object Dir_of_philosophy_label: TLabel
+    Left = 16
+    Height = 15
+    Top = 144
+    Width = 75
+    Caption = 'Жанр группы'
+  end
+  object Dir_of_philosophy_label_list: TComboBox
+    Left = 16
+    Height = 23
+    Top = 163
+    Width = 100
+    ItemHeight = 15
+    ItemIndex = 6
+    Items.Strings = (
+      'Альтернативный рок'
+      'Блюз-рок'
+      'Панк-рок'
+      'Панк-рок'
+      'Поп-рок'
+      'Психоделический рок'
+      'Рок'
+      'Фанк'
+      'Хеви-метал'
+      'Шансон'
+      'Электронная музыка'
+    )
+    TabOrder = 4
+    Text = 'Рок'
+  end
+  object mSave: TBitBtn
+    Left = 16
+    Height = 31
+    Top = 203
+    Width = 157
+    Caption = 'Добавить'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 5
+  end
+  object mCancel: TBitBtn
+    Left = 187
+    Height = 31
+    Top = 203
+    Width = 157
+    Cancel = True
+    Caption = 'Отменить'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 6
+  end
+end

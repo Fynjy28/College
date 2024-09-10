@@ -1,0 +1,93 @@
+object mForm: TmForm
+  Left = 584
+  Height = 271
+  Top = 443
+  Width = 623
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Группы'
+  ClientHeight = 271
+  ClientWidth = 623
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.2.0.0'
+  object Panel: TPanel
+    Left = 0
+    Height = 51
+    Top = 220
+    Width = 623
+    Align = alTop
+    ClientHeight = 51
+    ClientWidth = 623
+    Color = clTeal
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    OnClick = PanelClick
+    object Add_Note: TBitBtn
+      Left = 117
+      Height = 31
+      Top = 11
+      Width = 160
+      Caption = 'Добавить запись'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      OnClick = Add_NoteClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Edit_Note: TBitBtn
+      Left = 296
+      Height = 31
+      Top = 11
+      Width = 159
+      Caption = 'Редактировать запись'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      OnClick = Edit_NoteClick
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Del_Note: TBitBtn
+      Left = 469
+      Height = 31
+      Top = 11
+      Width = 141
+      Caption = 'Удалить запись'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      OnClick = Del_NoteClick
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
+  object mRec: TStringGrid
+    Left = 0
+    Height = 220
+    Top = 0
+    Width = 623
+    Align = alTop
+    AlternateColor = clAqua
+    Color = clWhite
+    ColumnClickSorts = True
+    FixedCols = 0
+    RowCount = 1
+    ScrollBars = ssAutoVertical
+    TabOrder = 1
+    OnDblClick = Edit_NoteClick
+    ColWidths = (
+      199
+      91
+      93
+      103
+      135
+    )
+  end
+end
